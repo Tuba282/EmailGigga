@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root{
+    --blackColor: #0B150F;
+    --greenColor: #96EF76;
+    --darkGreenColor: #2F872D;
+    --grayColor: #909090;
+}
+
+@font-face {
+    font-family: 'sora';
+    src: url('./Fonts/Sora-VariableFont_wght.ttf') format('woff2')
+}
