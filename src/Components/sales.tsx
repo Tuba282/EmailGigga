@@ -61,7 +61,7 @@ const Sales = () => {
                 </div>
 
 
-                <div className="w-full lg:w-[50%] lg:h-[550px]  my-4 p-2 md:p-15 flex flex-col gap-8  p-5 items-start">
+                <div className="w-full lg:w-[50%] lg:h-[550px]  my-4 md:p-15 flex flex-col gap-8  p-5 items-start">
                     <div className="text flex flex-col">
                         <p className="w-[180px] text-center px-2 text-[var(--darkGreenColor)] bg-[#EDFFED] rounded-full font-thin text-xs sm:text-sm py-0.5">LOCAL BENCHMARK</p>
                         <h1 className="text-2xl sm:text-4xl mt-5 font-bold leading-tight w-full max-w-4xl font-[sora]">Compare against the market</h1>
