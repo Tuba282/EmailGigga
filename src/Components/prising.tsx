@@ -43,7 +43,7 @@ const plans = [
 
 const Prising = () => {
     return (
-        <div className="w-full min-h-screen ">
+        <div className="w-full min-h-screen " id="pricing">
             <div className="text flex flex-col justify-center items-center gap-3 md:px-10 px-5">
                 <p className="w-[180px] text-center px-2 text-[var(--darkGreenColor)] bg-[#EDFFED] rounded-full font-thin text-xs sm:text-sm py-0.5">LOCAL BENCHMARK</p>
                 <h1 className="text-2xl sm:text-4xl max-w-xl w-full text-center mt-5 font-bold leading-tight font-[sora]">Seamless integration to all your best Apps</h1>

@@ -4,7 +4,7 @@
 
 const Sales = () => {
     return (
-        <section className="sm:mt-6 min-h-[500px] lg:mt-8 mt-12 max-w-7xl mx-auto my-20 ">
+        <section className="sm:mt-6 min-h-[500px] lg:mt-8 mt-12 max-w-7xl mx-auto my-20 " id="aboutus">
 
             <div
                 className="my-10 mx-auto max-w-7xl flex lg:justify-between gap-8 flex-col lg:flex-row">

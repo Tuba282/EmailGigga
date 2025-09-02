@@ -32,14 +32,14 @@ const cards: CardProps[] = [
 
 const Blogs = () => {
   return (
-    <div className='min-h-screen  max-w-7xl mx-auto sm:my-20 '>
+    <div className='min-h-screen  max-w-7xl mx-auto sm:my-20 ' id="blogs">
 
       <div className="text flex flex-col my-6 gap-5 p-6">
         <p className="w-[250px] text-[var(--darkGreenColor)] bg-[#96ef7686] rounded-full font-thin text-center text-xs sm:text-sm py-0.5">BRANDS THAT TRUSTED US</p>
         <h1 className="text-2xl sm:text-4xl font-bold leading-tight w-full max-w-4xl font-[sora]">Our Blog</h1>
         <p className="max-w-3xl w-full text-xs sm:text-sm py-0.5">At EmailGigga, we take immense pride in providing a cutting-edge email marketing solution that empowers businesses to achieve unparalleled success. But don't just take our word for it - listen to what our valued users have to say about their experience with EmailGigga!</p>
       </div>
-      <div className="cards flex flex-wrap gap-2 xl:justify-between justify-center items-center mt-10 p-5">
+      <div className="cards flex flex-wrap lg:flex-nowrap gap-2 xl:justify-between justify-center items-center mt-10 p-5">
         {cards.map((card, index) => (
           <div key={index} className="w-full sm:w-[420px] border-1 border-gray-200 rounded-3xl shadow-md overflow-hidden pt-4">
             <div className="relative group px-6">

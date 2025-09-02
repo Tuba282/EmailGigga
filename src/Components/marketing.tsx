@@ -26,7 +26,7 @@ const cards: CardProps[] = [
 
 const Marketing = () => {
     return (
-        <div className='min-h-screen w-full relative overflow-hidden pt-30 pb-20'>
+        <div className='min-h-screen w-full relative overflow-hidden pt-30 pb-20' id="features">
 
             <div className="text flex flex-col justify-center items-center gap-5">
                 <p className="w-[250px] text-[var(--darkGreenColor)] bg-[#96ef7686] rounded-full font-thin text-center text-xs sm:text-sm py-0.5">BRANDS THAT TRUSTED US</p>

@@ -1,7 +1,7 @@
 
 const SemiFooter = () => {
   return (
-    <section className="w-full flex justify-center items-center py-10 px-2">
+    <section className="w-full flex justify-center items-center py-10 px-2" id="contact">
       <div className="bg-[#142218] rounded-2xl w-full max-w-5xl mx-auto p-8 md:p-14 flex flex-col items-center relative overflow-hidden" style={{backgroundImage: 'url(/bg-pattern.svg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-6 leading-tight">
           Unlock the Potential of Your<br className="hidden md:block" />

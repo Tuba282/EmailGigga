@@ -24,13 +24,23 @@ interface Props {
 
 const drawerWidth = 240;
 const navItems = ['Features', 'Pricing', 'Blogs', 'AboutUs', 'Contact'];
+const navIds: string[] = ['features', 'pricing', 'blogs', 'aboutus', 'contact'];
 
 export default function DrawerAppBar(props: Props) {
+    
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
+    };
+
+    // Scroll to section by id
+    const handleNavClick = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     };
 
     const drawer = (
@@ -40,9 +50,9 @@ export default function DrawerAppBar(props: Props) {
             </Typography>
             <Divider />
             <List>
-                {navItems.map((item) => (
+                {navItems.map((item, idx) => (
                     <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleNavClick(navIds[idx])}>
                             <ListItemText primary={
                                 <Typography sx={{ fontSize: '14px' }}>
                                     {item}
@@ -71,12 +81,11 @@ export default function DrawerAppBar(props: Props) {
                         <img src="/logo.png" alt="Logo" className='w-10 h-10 drop-shadow-md drop-shadow-[#3FA11B]' />
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                        {navItems.map((item) => (
-                            <Button key={item} sx={{ color: '#fff' }}>
-                                {
-                                    <Typography sx={{ fontSize: '14px' }} className=' capitalize! hover:text-[var(--darkGreenColor)] duration-300 mx-3! '>
-                                        {item}
-                                    </Typography>}
+                        {navItems.map((item, idx) => (
+                            <Button key={item} sx={{ color: '#fff' }} onClick={() => handleNavClick(navIds[idx])}>
+                                <Typography sx={{ fontSize: '14px' }} className=' capitalize! hover:text-[var(--darkGreenColor)] duration-300 mx-3! '>
+                                    {item}
+                                </Typography>
                             </Button>
                         ))}
                         <Button variant="outlined" className='rounded-full! border-white! hover:border-[var(--darkGreenColor)]! hover:bg-[var(--darkGreenColor)]!'>
